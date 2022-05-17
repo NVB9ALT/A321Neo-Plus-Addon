@@ -1,12 +1,19 @@
 # A321Neo-Plus-Addon
 
 Expands the A321 Neo.
+
 Improved flight model and fly-by-wire additions;
+
 Added GPWS;
+
 Implemented toggleable ILS screen;
+
 Alarms;
+
 Simulated Engine startup sequence from menu;
+
 PTU sounds;
+
 TCAS Alarms and smart traffic sensing;
 
 Note, this is a pre release and is subject to change at any moment. Much of what is seen here is not a final product.
