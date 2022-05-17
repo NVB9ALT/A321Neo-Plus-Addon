@@ -16,6 +16,7 @@ PTU sounds;
 
 TCAS Alarms and smart traffic sensing;
 
+
 Note, this is a pre release and is subject to change at any moment. Much of what is seen here is not a final product.
 
 Old versions of this plugin are NOT COMPATIBLE with low-end devices. Those versions are reliant on a minimum refresh rate of 30 fps, as this is the refresh rate of the fly by wire system. For best results, use the latest revision.
