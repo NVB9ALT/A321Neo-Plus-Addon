@@ -1,7 +1,7 @@
 # A321Neo-Plus-Addon
 
 Expands the A321 Neo.
-Improved Flight model and FlyByWire additions;
+Improved flight model and fly-by-wire additions;
 Added GPWS;
 Implemented toggleable ILS screen;
 Alarms;
