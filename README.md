@@ -12,6 +12,8 @@ Alarms;
 
 Simulated Engine startup sequence from menu;
 
+APU simulation;
+
 PTU sounds;
 
 TCAS Alarms and smart traffic sensing;
