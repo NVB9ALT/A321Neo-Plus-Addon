@@ -20,6 +20,7 @@ function getPTUBork() {
 }
 simInterval = setInterval(function() {
   getFlapChange();
+  getPTUBork()
 }, 15)
 
 //sound additions
