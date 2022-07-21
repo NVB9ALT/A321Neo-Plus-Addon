@@ -26,29 +26,10 @@ simInterval = setInterval(function() {
 //sound additions
 //Thinking about adding reverse sounds, would toggle with reverse = true. 'Cause thrust reversers are distinctly loud. - NVB9
 
-geofs.aircraft.instance.definition.sounds[0].effects.volume.value = "rpmL";
-geofs.aircraft.instance.definition.sounds[0].effects.pitch.value = "rpmL";
 geofs.aircraft.instance.definition.sounds[0].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/neo2.mp3"
-geofs.aircraft.instance.definition.sounds[1].effects.volume.value = "rpmL";
-geofs.aircraft.instance.definition.sounds[1].effects.pitch.value = "rpmL";
 geofs.aircraft.instance.definition.sounds[1].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/neo2.mp3"
-geofs.aircraft.instance.definition.sounds[2].effects.volume.value = "rpmL";
-geofs.aircraft.instance.definition.sounds[2].effects.pitch.value = "rpmL";
 geofs.aircraft.instance.definition.sounds[2].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/neo3.mp3"
 geofs.aircraft.instance.definition.sounds[5].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/startupneo.mp3"
-
-geofs.aircraft.instance.definition.sounds[7] = {}
-geofs.aircraft.instance.definition.sounds[7].id = "rpm4"
-geofs.aircraft.instance.definition.sounds[7].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/neo2.mp3"
-geofs.aircraft.instance.definition.sounds[7].effects = { "volume": { "value": "rpmR", "ramp": [800, 950, 2500, 3500], "ratio": 1 }, "pitch": { "value": "rpmR", "ramp": [0, 20000, 20000, 20000], "offset": 1, "ratio": 1 } };
-geofs.aircraft.instance.definition.sounds[8] = {}
-geofs.aircraft.instance.definition.sounds[8].id = "rpm5"
-geofs.aircraft.instance.definition.sounds[8].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/neo2.mp3"
-geofs.aircraft.instance.definition.sounds[8].effects = { "volume": { "value": "rpmR", "ramp": [1000, 2500, 10000, 10000], "ratio": 1 }, "pitch": { "value": "rpmR", "ramp": [0, 20000, 20000, 20000], "offset": 1, "ratio": 1.5 } };
-geofs.aircraft.instance.definition.sounds[9] = {}
-geofs.aircraft.instance.definition.sounds[9].id = "rpm6"
-geofs.aircraft.instance.definition.sounds[9].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/neo3.mp3"
-geofs.aircraft.instance.definition.sounds[9].effects = { "volume": { "value": "rpmR", "ramp": [6000, 20000, 20000, 20000], "ratio": 1 }, "pitch": { "value": "rpmR", "ramp": [1000, 20000, 20000, 20000], "offset": 1, "ratio": 1.5 } };
 
 geofs.aircraft.instance.definition.sounds[10] = {}
 geofs.aircraft.instance.definition.sounds[10].id = "ptuBork"
