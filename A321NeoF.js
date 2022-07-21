@@ -3,6 +3,34 @@ function changeA321s() {
 let ptuBork = false;
 geofs.animation.values.flapschange = 0;
 geofs.animation.values.ptu = 0;
+let engine = false;
+let engon = false;
+geofs.animation.values.rpmL = 0;
+
+function checkEngines() {
+  if (engon == false && geofs.animation.values.rpmL <= 999) {
+    engon = true;
+  }
+  if (engine == true && geofs.animation.values.enginesOn == 0) {
+    engine = false;
+  }
+  if (engine == false && geofs.animation.values.enginesOn == 1) {
+    engine = true;
+  }
+};
+
+function getRPMs() {
+  if (engon) {
+    geofs.animation.values.rpmL = geofs.animation.values.rpmL + 2.5;
+    if (geofs.animation.values.rpmL >= 1000) {
+      engon = false;
+      engine = true;
+    }
+  }
+  if (engine) {
+    geofs.animation.values.rpmL = geofs.animation.values.rpm + 100;
+  }
+}
 
 
 function getPTUBork() {
@@ -20,14 +48,22 @@ function getPTUBork() {
 }
 simInterval = setInterval(function() {
   getFlapChange();
-  getPTUBork()
+  getPTUBork();
+  checkEngines();
+  getRPMs();
 }, 15)
 
 //sound additions
 //Thinking about adding reverse sounds, would toggle with reverse = true. 'Cause thrust reversers are distinctly loud. - NVB9
 
+geofs.aircraft.instance.definition.sounds[0].effects.volume.value = "rpmL";
+geofs.aircraft.instance.definition.sounds[0].effects.pitch.value = "rpmL";
 geofs.aircraft.instance.definition.sounds[0].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/neo2.mp3"
+geofs.aircraft.instance.definition.sounds[1].effects.volume.value = "rpmL";
+geofs.aircraft.instance.definition.sounds[1].effects.pitch.value = "rpmL";
 geofs.aircraft.instance.definition.sounds[1].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/neo2.mp3"
+geofs.aircraft.instance.definition.sounds[2].effects.volume.value = "rpmL";
+geofs.aircraft.instance.definition.sounds[2].effects.pitch.value = "rpmL";
 geofs.aircraft.instance.definition.sounds[2].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/neo3.mp3"
 geofs.aircraft.instance.definition.sounds[5].file = "https://138772948-227015667470610340.preview.editmysite.com/uploads/1/3/8/7/138772948/startupneo.mp3"
 
